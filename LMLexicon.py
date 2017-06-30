@@ -18,7 +18,7 @@ class LMLexicon:
         data_path = os.path.abspath(os.path.join('data', 'finance',
                                                  'loughran_list.csv'))
         if not os.path.exists(data_path):
-            os.makedirs(os.path.abspath(os.path.join(*data_path.split(os.sep)[:-1])), 
+            os.makedirs(os.sep + os.path.join(*data_path.split(os.sep)[:-1])),
                         exist_ok=True)
             headers = {'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '\
                                     'AppleWebKit/537.36 (KHTML, like Gecko) '\
