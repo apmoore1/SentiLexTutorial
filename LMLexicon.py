@@ -18,6 +18,8 @@ class LMLexicon:
         data_path = os.path.abspath(os.path.join('data', 'finance',
                                                  'loughran_list.csv'))
         if not os.path.exists(data_path):
+            os.makedirs(os.path.join(data_path.split(os.sep))[:-1], 
+                        exist_ok=True)
             headers = {'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '\
                                     'AppleWebKit/537.36 (KHTML, like Gecko) '\
                                     'Chrome/58.0.3029.110 Safari/537.36'}
@@ -30,7 +32,6 @@ class LMLexicon:
 
     @staticmethod
     def _load_lexicon(data_path):
-        os.makedirs(os.path.join(data_path.split(os.sep)[:-1]), exist_ok=True)
         with open(data_path, 'r', encoding='ISO-8859-1', newline='') as fp:
             data = pandas.read_csv(fp)
             pos_words = data.loc[data['Positive'] != 0]['Word']
