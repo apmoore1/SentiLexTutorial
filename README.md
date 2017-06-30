@@ -7,3 +7,5 @@ The tutorial is within the [IPython notebook](Tutorial.ipynb)
 
 The code requires the following [PIPs](requirements.txt). To install them run the following:
 `pip3 install -r requirements.txt`
+And the following command needs running to download the stop words for NLTK:
+`python3 -m nltk.downloader stopwords`
