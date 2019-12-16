@@ -61,7 +61,7 @@ snowballstemmer==1.2.1
 -e git+https://github.com/apmoore1/socialsent.git@4a1fc57d4532071e9534725c31d0a63d522620f4#egg=socialsent
 Sphinx==1.6.2
 sphinxcontrib-websupport==1.0.1
-tensorflow==1.2.0
+tensorflow==1.15.0
 terminado==0.6
 testpath==0.3.1
 Theano==0.9.0
