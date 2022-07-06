@@ -12,7 +12,7 @@ decorator==4.0.11
 docutils==0.13.1
 entrypoints==0.2.3
 gensim==2.2.0
-html5lib==0.9999999
+html5lib==0.999999999
 idna==2.5
 imagesize==0.7.1
 ipykernel==4.6.1
